@@ -1,0 +1,37 @@
+country_event = { 
+
+id = 400014 
+
+trigger = { 
+tag = IRQ
+government = parliamentary_republic
+war = no 
+
+}
+
+fire_only_once = yes 
+major = yes 
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+title = "EVTNAME400014" 
+desc = "EVTDESC400014" 
+picture = "nwo2_baath_party_coup" 
+
+option = { 
+name = "EVTOPTA400014" 
+primary_culture = shia_arab
+ai_chance = { 
+factor = 100 
+} 
+} 
+option = { 
+name = "EVTOPTA400014" 
+prestige = -3 
+ai_chance = { 
+factor = 0 
+} 
+} 
+}

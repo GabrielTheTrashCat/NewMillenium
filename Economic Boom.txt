@@ -1,0 +1,29 @@
+#Economic_Boom
+country_event = {
+	id = 199366
+	title = "Economic Boom"
+	desc = "Investments into your economy!"
+	picture = "(picture name)"
+
+        #the four lines below are only needed if they are yes
+	 
+	fire_only_once = yes
+
+	trigger = { #what triggers the event
+		year = 1992
+	}
+	
+	mean_time_to_happen = {
+		months = 2
+		
+		modifier = {
+			factor = (factor)
+			(trigger)
+		}
+	}
+	
+	option = {
+		name = "That's great!"
+		money = 200000
+	}
+}

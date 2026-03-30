@@ -1,0 +1,44 @@
+country_event = { 
+
+id = 220220182127 
+
+trigger = { 
+tag = USA
+year = 2003 
+war = no 
+
+}
+
+fire_only_once = yes 
+major = no
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+title = "EVTNAME220220182127" 
+desc = "EVTDESC220220182127" 
+picture = "debate" 
+
+option = { 
+name = "EVTOPTA220220182127" 
+casus_belli ={
+target = IRQ
+
+type = install_democracy_gov_cb
+
+months = 12
+
+}
+ai_chance = { 
+factor = 95 
+} 
+} 
+option = { 
+name = "EVTOPTB220220182127" 
+prestige = -3 
+ai_chance = { 
+factor = 5 
+} 
+} 
+}

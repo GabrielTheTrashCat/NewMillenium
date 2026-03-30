@@ -1,0 +1,75 @@
+country_event = { 
+
+id = 400015 
+
+trigger = { 
+tag = IRQ
+government = presidential_republic_full
+war = no 
+
+}
+
+fire_only_once = yes 
+major = yes 
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+title = "EVTNAME400015" 
+desc = "EVTDESC400015" 
+picture = "nwo2_baath_party_coup" 
+
+option = { 
+name = "EVTOPTA400015" 
+primary_culture = shia_arab
+ai_chance = { 
+factor = 100 
+} 
+} 
+option = { 
+name = "EVTOPTB400015" 
+prestige = -3 
+ai_chance = { 
+factor = 0 
+} 
+} 
+}
+
+country_event = { 
+
+id = 400215 
+
+trigger = { 
+tag = IRQ
+government = presidential_republic_semi
+war = no 
+
+}
+
+fire_only_once = yes 
+major = yes 
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+title = "Power to the Shiites!" 
+desc = "The U.S operation in Iraq, led to the fall of the Sunni Government in country" 
+picture = "nwo2_baath_party_coup" 
+
+option = { 
+name = "All power to the Shiites!" 
+primary_culture = shia_arab
+ai_chance = { 
+factor = 100 
+} 
+} 
+option = { 
+name = "EVTOPTB400015" 
+prestige = -3 
+ai_chance = { 
+factor = 0 
+} 
+} 
+}

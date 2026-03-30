@@ -1,0 +1,225 @@
+#Arab_Spring
+#Syria
+country_event = {
+
+    id = 299366
+    title = "EVTNAME299366"
+    desc = "EVTDESC299366" 
+    picture = "arab_spring"
+
+    trigger = {
+        tag = SYR
+        year = 2012
+        NOT = { 
+        has_country_flag = arab_spring
+                      }        
+    }
+    
+    fire_only_once = yes
+    major = yes
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+option = { name = "EVTOPTA299366" 897 = { secede_province = BBB } 903 = { secede_province = BBB } 907 = { secede_province = BBB } 901 = { secede_province = ROJ } 		
+war = {
+			target = BBB
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		} ai_chance = { factor = 90 } }
+
+}
+
+
+}
+
+#IraqISIS
+country_event = {
+
+    id = 200266
+    title = "Rise of the Islamic State"
+    desc = "Breaking balance of power in the Baghdad led to radicalization of the Sunni Arab population in Iraq" 
+    picture = "arab_spring.tga"
+
+    trigger = {
+        tag = IRQ
+        year = 2013
+        NOT = { 
+        primary_culture = sunni_arab
+        has_country_flag = arab_spring
+                      }        
+    }
+    
+    fire_only_once = yes
+    major = yes
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+option = { name = "EVTOPTA200266" 923 = { secede_province = III } 927 = { secede_province = III } 931 = { secede_province = III }
+war = {
+			target = III
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		}  ai_chance = { factor = 90 } }
+}
+
+}
+
+#SyriaISIS
+country_event = {
+
+    id = 900277
+    title = "Rise of the Islamic State in Syria"
+    desc = "The instability in the Middle East led to growing of the Jihadist Groups in the region" 
+    picture = "arab_spring"
+
+    trigger = {
+        tag = BBB
+        year = 2014
+        NOT = { 
+        has_country_flag = arab_spring
+                      }        
+    }
+    
+    fire_only_once = yes
+    major = yes
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+option = { name = "EVTOPTA900277" 907 = { secede_province = III } 
+war = {
+			target = III
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		} ai_chance = { factor = 90 } }
+}
+
+}
+
+#Tunisia
+country_event = {
+
+    id = 222221
+    title = "EVTNAME222221"
+    desc = "EVTDESC222221" 
+    picture = "arab_spring"
+
+    trigger = {
+        tag = TUN
+        year = 2011
+        NOT = { 
+        has_country_flag = arab_spring
+                      }        
+    }
+    
+    fire_only_once = yes
+    major = yes
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+    option = {
+        name = "EVTOPTA222221" 	
+        any_pop = { 
+        militancy = 99.99
+        } 
+        set_country_flag = arab_spring
+        ai_chance = {
+            factor = 50    
+        }
+    }
+}
+
+#Libya
+country_event = {
+
+    id = 222220
+    title = "The End of the Ghaddafi Rule"
+    desc = "Muammar Ghaddafi was ruling Libya for a very long time, although it doesn't seem like he is going to survive through the Arab Spring" 
+    picture = "arab_spring"
+
+    trigger = {
+        tag = TRI
+        year = 2011
+        NOT = { 
+        has_country_flag = arab_spring
+                      }        
+    }
+    
+    fire_only_once = yes
+    major = yes
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+    option = {
+        name = "EVTOPTA222220" 		
+        any_pop = { 
+        militancy = 10000
+        } 
+        set_country_flag = arab_spring
+        ai_chance = {
+            factor = 50    
+        }
+    }
+}
+
+#LibyaCivilWar
+country_event = {
+
+    id = 142111
+    title = "The Civil War breaks out in Libya!"
+    desc = "EVTDESC142111" 
+    picture = "arab_spring"
+
+    trigger = {
+        tag = TRI
+        year = 2014
+        NOT = { 
+        has_country_flag = arab_spring
+                      }        
+    }
+    
+    fire_only_once = yes
+    major = yes
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+    option = {
+        name = "EVTOPTA142111" 	
+        release = CYR	
+        release = GHT	
+        any_pop = { 
+        militancy = 1000
+        } 
+        set_country_flag = arab_spring
+        ai_chance = {
+            factor = 50    
+        }
+    }
+}
+

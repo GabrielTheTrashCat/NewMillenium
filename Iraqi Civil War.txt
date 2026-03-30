@@ -1,0 +1,47 @@
+country_event = { 
+
+id = 674525 
+
+trigger = { 
+tag = USA
+year = 2003
+war = no 
+
+}
+
+fire_only_once = yes 
+
+    mean_time_to_happen =  {   
+        months = 2
+    }
+
+title = "Iraq War" 
+desc = "In 2003 the U.S invade Iraq and overthrew Sunni Government of Saddam Hussein." 
+picture = "nwo2_iraq" 
+
+option = { 
+name = "Fight the Dictators!" 
+war = {
+			target = IRQ
+			attacker_goal = {
+				casus_belli = add_to_sphere
+			}
+			attacker_goal = {
+				casus_belli = install_democracy_gov_cb
+			}
+			
+			defender_goal = {
+				casus_belli = status_quo
+			}
+		} ai_chance = { factor = 90 } }
+
+}
+
+option = { 
+name = "We shall not play with the balance of powers" 
+prestige = -3 
+ai_chance = { 
+factor = 10 
+} 
+} 
+}

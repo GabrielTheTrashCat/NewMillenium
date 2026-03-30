@@ -1,0 +1,37 @@
+#Economic_Boom
+country_event = {
+
+    id = 466399
+
+    trigger = {
+        tag = GER
+        year = 1993
+        NOT = { 
+        has_country_flag = economic_boom
+                      }        
+    }
+    
+    fire_only_once = yes
+    major = yes
+
+    mean_time_to_happen =  {   
+        months = 1
+    }
+
+    title = "Germany is finally re-united!"
+    desc = "After the fall of the Berlin Wall in 1989, Germany has finally re-united! From now Germany is going to Unite The Europe!" 
+    picture = "nwo2_united_germany"
+
+    option = {
+        name = "It's our time again!" 
+        prestige = 100
+        money = 150000	
+        any_pop = { 
+        militancy = -0.05
+        } 
+        set_country_flag = economic_boom
+        ai_chance = {
+            factor = 50    
+        }
+    }
+}
